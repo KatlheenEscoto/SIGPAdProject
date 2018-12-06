@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'SIGPAdProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '<your_username>$<your_database_name>',
-        'USER': '<your_username>',
-        'PASSWORD': '<your_mysql_password>',
-        'HOST': '<your_mysql_hostname>',
+        'NAME': 'katlheen$sigpad',
+        'USER': 'katlheen',
+        'PASSWORD': 'root1234',
+        'HOST': 'katlheen.mysql.pythonanywhere-services.com',
     }
 }
 
