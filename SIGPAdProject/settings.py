@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ti=eu2@e=!vtrlan8$_*nav+fq+z9p9i1j8=75ns!s1$$etp85'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
  '127.0.0.1:8000',
- "*",
+ 'katlheen.pythonanywhere.com',
 ]
 
 
@@ -81,8 +81,11 @@ WSGI_APPLICATION = 'SIGPAdProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'katlheen$sigpad_bd',
+        'USER': 'katlheen',
+        'PASSWORD': 'root1234',
+        'HOST': 'katlheen.mysql.pythonanywhere-services.com',
     }
 }
 
